@@ -6,7 +6,9 @@ from django.conf import Settings
 from django.conf.urls.static import static
 
 urlpatterns = [    
-    path('', views.Inicio, name='inicio'),    
+    path('', views.Inicio, name='inicio'),  
+    path('manual_user/', views.manual_user, name='manual_user'),  
+
     
 ]
 urlpatterns+=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

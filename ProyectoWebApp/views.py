@@ -18,3 +18,7 @@ def Inicio(request):
         # Captura la excepción y muestra un mensaje de error personalizado
         error_message = "Lo sentimos, estamos experimentando problemas técnicos en este momento. Por favor, intenta nuevamente más tarde."
         return render(request, 'ProyectoWebApp/error.html', {"error":error_message, "e":error})
+
+
+def manual_user(request):
+    return render(request, 'ProyectoWebApp/pdf.html')

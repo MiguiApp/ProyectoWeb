@@ -55,6 +55,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+            style="font-size: 1em;">
+              MANUAL
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{% url 'manual_user' %}" target="_blank" >Manual del usuario</a></li>
+              <li><a class="dropdown-item" href="{% url 'manual_user' %}" target="_blank">Manual del administrador</a></li>              
+            </ul>
+          </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="{% url 'inicio' %}">INICIO</a>
           </li>
@@ -96,9 +106,6 @@
       </div>
     </div>
   </nav>
-
-
-
 {% block content%}
   <!-- content -->
 

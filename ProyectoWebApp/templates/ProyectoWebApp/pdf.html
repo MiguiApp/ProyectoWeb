@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual del usuario</title>
+</head>
+<body>
+    <h1>Manual del usuario</h1>
+    <style>
+        embed{
+            margin: 0 auto;
+            display: block;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+    <embed src="{% static 'ProyectoWebApp/pdf/Manual.pdf' %}" type="application/pdf" width="1000px" height="700px">
+</body>
+</html>
