@@ -21,4 +21,8 @@ def Inicio(request):
 
 
 def manual_user(request):
-    return render(request, 'ProyectoWebApp/pdf.html')
+    return render(request, 'ProyectoWebApp/manualUser.html')
+
+
+def manual_admin(request):
+    return render(request, 'ProyectoWebApp/manualAdmin.html')
